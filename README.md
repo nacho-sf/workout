@@ -1,2 +1,2 @@
-# practica
-Trabajo diario de ejercicios y pruebas para practicar
+# practice
+daily work of tests and exercises
