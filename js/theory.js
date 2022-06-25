@@ -349,3 +349,311 @@ switch (groceryItem) {
 }
 
 */
+
+
+
+
+
+///////////// FUNCTIONS //////////////
+/*
+
+
+///////// FUNCTION DECLARATION AND CALLING
+
+A function is a reusable block of code that groups together a sequence of statements to perform a specific task.
+
+A function declaration consists of:
+
+-The function keyword.
+-The name of the function, or its identifier, followed by parentheses.
+-A function body, or the block of statements required to perform a specific task, enclosed in the function’s curly brackets, { }.
+
+Eg:*/
+
+/*
+function greetWorld() {  
+  console.log('Hello, World!');
+}                        //---> Declaración!!
+
+greetWorld();            //---> Ejecución!!!
+*/
+
+/*
+Just like how a variable declaration binds a value to a variable name, a function declaration binds a function to a name, or an identifier.
+*/
+
+
+
+////////// PARAMETERS & ARGUMENTS
+/*
+
+const width = 10;
+const height = 6;
+
+function calculateArea (width, height) {     
+    console.log(width * height);   //--> Parameters!!
+}
+
+calculateArea(width, height);      //--> Arguments!!
+*/
+
+
+
+/////////// DEFAULT PARAMETERS
+/*
+
+function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+ 
+greeting('Nick')   // Output: Hello, Nick!
+greeting()         // Output: Hello, stranger!
+*/
+
+
+
+///////////// RETURN STATEMENT
+/*
+
+function rectangleArea(width, height) {
+  if (width < 0 || height < 0) {
+    return 'You need positive integers to calculate area!';
+  }
+  return width * height;
+}
+
+*/
+
+
+
+////////////// HELPER FUNCTIONS
+
+/*
+Eg:
+function multiplyByNineFifths(number) {
+  return number * (9/5);
+};
+ 
+function getFahrenheit(celsius) {
+  return multiplyByNineFifths(celsius) + 32;
+};
+ 
+getFahrenheit(15); // Returns 59
+*/
+
+
+
+////////// FUNCTION EXPRESION
+/*
+See later
+*/
+
+
+
+////////// ARROW FUNCTIONS
+/*
+
+Eg: () => {}
+
+const rectangleArea = (width, height) => {
+  let area = width * height;
+  return area;
+};
+
+
+
+/////////// CONCISE BODY ARROW FUNCTIONS
+/*
+See later
+*/
+
+
+
+
+
+
+
+///////////////// ARRAYS //////////////////
+/*
+
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+
+*/
+/*
+-The array is represented by the square brackets [] and the content inside.
+-Each content item inside an array is called an element.
+-There are three different elements inside the array.
+-Each element inside the array is a different data type.
+*/
+
+
+
+////////// ACCESING ARRAY ELEMENTS
+/*
+
+const hello = 'Hello World';
+console.log(hello[6]);
+// Output: W
+
+*/
+/*
+-cities is an array that has three elements.
+-We’re using bracket notation, [] with the index after the name of the array to access the element.
+-cities[0] will access the element at index 0 in the array cities. You can think of cities[0] as accessing the space in memory that holds the string 'New York'.
+*/
+
+
+
+////////// UPDATE ARRAY ELEMENTS
+/*
+
+let seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
+ 
+seasons[3] = 'Autumn';
+console.log(seasons); 
+//Output: ['Winter', 'Spring', 'Summer', 'Autumn']
+
+*/
+/*
+The line, seasons[3] = 'Autumn'; tells our program to change the item at index 3 of the seasons array to be 'Autumn' instead of what is already there.
+*/
+
+
+
+/////////////// ARRAYS WITH LET & CONST
+
+/*
+Variables declared with the const keyword cannot be reassigned. However, elements in an array declared with const remain mutable. Meaning that we can change the contents of a const array, but cannot reassign a new array or a different value.
+*/
+/*
+
+let condiments = ['ketchup','mustard','soy sauce', 'sriracha'];
+condiments[0] = 'mayo';
+console.log(condiments);  // Eg 1
+condiments = ['canela'];
+console.log(condiments);  // Eg 2
+const utensils = ['fork','knife','chopsticks','spork'];
+utensils[3] = 'spoon';
+console.log(utensils);    // Eg 3
+utensils = ['plate'];
+console.log(utensils);    // Eg 4
+
+*/
+
+
+
+///////////// THE .LENGTH PROPERTY
+
+/*
+It returns the number of items in the array
+*/
+/*
+
+const newYearsResolutions = ['Keep a journal', 'Take a falconry class'];
+ 
+console.log(newYearsResolutions.length);
+// Output: 2
+
+*/
+/*
+-We use dot notation, chaining a period with the property name to the array, to access the length property of the newYearsResolutions array.
+-Then we log the length of newYearsResolution to the console.
+-Since newYearsResolution has two elements, 2 would be logged to the console.
+*/
+
+
+
+/////////// THE .PUSH METHOD
+/*
+Allows us to add items to the end of an array.
+*/
+/*
+
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+ 
+itemTracker.push('item 3', 'item 4');
+ 
+console.log(itemTracker); 
+// Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+
+/*
+-We access the push method by using dot notation, connecting push to itemTracker with a period.
+-Then we call it like a function. That’s because .push() is a function and one that JavaScript allows us to use right on an array.
+-.push() can take a single argument or multiple arguments separated by commas. In this case, we’re adding two elements: 'item 3' and 'item 4' to itemTracker.
+-Notice that .push() changes, or mutates, itemTracker. You might also see .push() referred to as a destructive array method since it changes the initial array.
+*/
+
+
+
+/////////////// THE .POP METHOD
+/*
+Removes the last item of an array.
+*/
+/*
+
+const newItemTracker = ['item 0', 'item 1', 'item 2'];
+ 
+const removed = newItemTracker.pop();
+ 
+console.log(newItemTracker); 
+// Output: [ 'item 0', 'item 1' ]
+console.log(removed);
+// Output: item 2
+
+*/
+/*
+-In the example above, calling .pop() on the newItemTracker array removed item 2 from the end.
+-.pop() does not take any arguments, it simply removes the last element of newItemTracker.
+-.pop() returns the value of the last element. In the example, we store the returned value in a variable removed to be used for later.
+-.pop() is a method that mutates the initial array.
+*/
+
+
+
+/////////////// MORE METHODS
+/*
+.join(), .slice(), .splice(), .shift(), .unshift(), .concat(), and much more... in MDN documentation
+*/
+
+
+
+////////////// ARRAYS & FUNCTIONS
+/*
+when you pass an array into a function, if the array is mutated inside the function, that change will be maintained outside the function as well.
+*/
+/*
+
+const flowers = ['peony', 'daffodil', 'marigold'];
+ 
+function addFlower(arr) {
+  arr.push('lily');
+}
+ 
+addFlower(flowers);
+ 
+console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+*/
+/*
+-The flowers array that has 3 elements.
+-The function addFlower() has a parameter of arr uses .push() to add a 'lily' element into arr.
+-We call addFlower() with an argument of flowers which will execute the code inside addFlower.
+-We check the value of flowers and it now includes the 'lily' element! The array was mutated!
+*/
+
+
+
+////////////// NESTED ARRAYS
+
+/*
+const nestedArr = [[1], [2, 3]];
+ 
+console.log(nestedArr[1]); // Output: [2, 3]
+
+*/
+/*
+
+const nestedArr = [[1], [2, 3]];
+
+console.log(nestedArr[1][0]); // Output: 2
+
+*/
