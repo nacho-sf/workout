@@ -657,3 +657,167 @@ const nestedArr = [[1], [2, 3]];
 console.log(nestedArr[1][0]); // Output: 2
 
 */
+
+
+
+
+
+
+
+
+
+//////////////// LOOPS /////////////////
+
+
+
+/////////////// THE FOR LOOP
+/*
+
+for (let counter = 0; counter < 4; counter++) {
+  console.log(counter);
+}
+
+*/
+/*
+A for loop contains three expressions separated by ; inside the parentheses:
+
+-an initialization starts the loop and can also be used to declare the iterator variable.
+-a stopping condition is the condition that the iterator variable is evaluated against— if the condition evaluates to true the code block will run, and if it evaluates to false the code will stop.
+-an iteration statement is used to update the iterator variable on each loop.
+*/
+
+
+
+//////////// LOOPING IN REVERSE
+/*
+
+for (let counter = 3; counter > 0; counter--) {
+  console.log(counter);
+}
+
+*/
+
+
+
+//////////// LOOPING THROUGH ARRAYS
+/*
+To loop through each element in an array, a for loop should use the array’s .length property in its condition.
+*/
+/*Eg:
+
+const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+
+for (let i = 0; i < animals.length; i++){
+  console.log(animals[i]);
+}
+
+*/
+
+
+
+///////////// NESTED LOOPS
+/*
+One use for a nested for loop is to compare the elements in two arrays. For each round of the outer for loop, the inner for loop will run completely.
+*/
+/*
+
+const myArray = [6, 19, 20];
+const yourArray = [19, 81, 2];
+for (let i = 0; i < myArray.length; i++) {
+  for (let j = 0; j < yourArray.length; j++) {
+    if (myArray[i] === yourArray[j]) {
+      console.log('Both arrays have the number: ' + yourArray[j]);
+    }
+  }
+}
+
+*/
+/*
+For each element in the outer loop array, myArray, the inner loop will run in its entirety comparing the current element from the outer array, myArray[i], to each element in the inner array, yourArray[j]. When it finds a match, it prints a string to the console.
+*/
+
+
+
+////////////// THE WHILE LOOP
+/*
+To start, let’s convert a for loop into a while loop:
+*/
+/*
+
+// A for loop that prints 1, 2, and 3
+for (let counterOne = 1; counterOne < 4; counterOne++){
+  console.log(counterOne);
+}
+ 
+// A while loop that prints 1, 2, and 3
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+}
+
+*/
+/*
+The syntax of a while loop is ideal when we don’t know in advance how many times the loop should run. Think of eating like a while loop: when you start taking bites, you don’t know the exact number you’ll need to become full. Rather you’ll eat while you’re hungry. In situations when we want a loop to execute an undetermined number of times, while loops are the best choice.
+*/
+
+
+
+////////////// DO...WHILE STATEMENTS
+/*
+In some cases, you want a piece of code to run at least once and then loop based on a specific condition after its initial run.
+A do...while statement says to do a task once and then keep doing it until a specified condition is no longer met.
+*/
+/*
+
+let countString = '';
+let i = 0;
+ 
+do {
+  countString = countString + i;
+  i++;
+} while (i < 5);
+ 
+console.log(countString);
+
+*/
+/*
+Unlike the while loop, do...while will run at least once whether or not the condition evaluates to true
+*/
+/*
+
+const firstMessage = 'I will print!';
+const secondMessage = 'I will not print!'; 
+ 
+// A do while with a stopping condition that evaluates to false
+do {
+ console.log(firstMessage)
+} while (true === false);
+ 
+// A while loop with a stopping condition that evaluates to false
+while (true === false){
+  console.log(secondMessage)
+};
+
+*/
+
+
+
+///////////// THE BREAK KEYWORD
+/*
+Imagine we’re looking to adopt a dog. We plan to go to the shelter every day for a year and then give up. But what if we meet our dream dog on day 65? We don’t want to keep going to the shelter for the next 300 days just because our original plan was to go for a whole year.
+
+When we want to stop a loop from continuing to execute even though the original stopping condition we wrote for our loop hasn’t been met, we can use the keyword break.
+*/
+/*
+
+for (let i = 0; i < 99; i++) {
+  if (i > 2 ) {
+     break;
+  }
+  console.log('Banana.');
+}
+ 
+console.log('Orange you glad I broke out the loop!');
+
+*/
