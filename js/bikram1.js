@@ -7,19 +7,21 @@
 
 //1.- Crear variable tipo let de nombre variableSinValor declarada sin valor
 
-
+//let variableSinValor = null
 
 //2.- Crear 2 variables tipo let de nombres booleano1 y booleano2 con valores booleanos
 
-
+//let booleano1 = true;
+//let booleano2 = false;
 
 //3.- Crear variable tipo const de nombre PI declarada con valor 3.14
 
-
+//const PI = 3.14;
 
 //4.- Crear variable tipo const de nombre TAU declarada con valor 2 veces PI
 
-
+//const PI = 3.14;
+//const TAU = 2 * PI;
 
 
 
@@ -29,15 +31,15 @@
 
 //5.- Crear variable booleanoAnd cuyo valor sea la comparación booleana booleano1 and booleano2
 
-
+//let booleanoAnd = booleano1 && booleano2;
 
 //6.- Crear variable booleanoNot cuyo valor sea la compracación booleana no booleano1
 
-
+//let booleanoNot != booleano1;
 
 //7.- Crear variable booleanoMix0 cuyo valor sea la compración booleana (booleano1 or booleano2) and (booleano1 or (not booleano1 and not booleano2)
 
-
+//let booleanoMix0 = (booleano1 || booleano2) && (booleano1 ||(!=booleano1 && !=booleano2));
 
 
 
@@ -65,12 +67,25 @@
 
 //11.- Crear las variables postI y postJ con valor 0 a continuación cree un bucle que itere 11 veces. En cada iteración se deberá sumar al valor de postI el valor de postJ++
 
-
+/*
+var postI = 0;
+for (let postJ = 0; postJ < 11; postJ++) {
+    postI+=postJ++;
+}
+console.log(postI);
+*/
 
 //12.- Crear la variable sumaPares con valor 0 a continuación crea un bucle que itere 10 veces (i < 10) si la iteración es par se deberá sumar a sumaPares el número de la iteración actual (i)
 
-
-
+/*
+var sumaPares = 0;
+  for (let i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+        sumaPares += i;
+    }
+}
+console.log(sumaPares);
+*/
 
 
 
@@ -145,12 +160,25 @@
 
 //24.- Crear variable contarHasta10 con valor 0 e incrementar su valor con un bucle while hasta que se verifique que contarHasta10 === 10
 
-
+/*
+var contarHasta10 = 0;
+while (contarHasta10 <= 10){
+    console.log(contarHasta10);
+    contarHasta10++;
+}
+*/
 
 //25.- Crear las variables preI y preJ con valor 0 a continuación cree un bucle que itere 11 veces. En cada iteración se deberá sumar al valor de preI el valor de ++preJ
 
 
 
 //26.- Crear la variable sumaImpares con valor 0 a continuación crea un bucle que itere 10 veces (i < 10) si la iteración es impar se deberá sumar a sumaImpares el número de la iteración actual (i)
-
-
+/*
+var sumaImpares = 0
+for (let i = 0; i < 10; i++) {
+    if (i % 2 !== 0) {
+        sumaImpares += i;
+    };
+}
+console.log(sumaImpares);
+*/
