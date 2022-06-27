@@ -216,3 +216,55 @@ function sumaSerie(count) {
     }
 }
 */
+
+
+
+
+
+
+
+
+/*
+Ejercicios DOM:
+
+
+1- Hacer un boton que esconda/enseñe el texto de un parrafo cada vez que se pulsa el mismo boton. Por defecto, el párrafo debe estar visible
+*/
+
+
+
+//Solución 1:
+
+/*
+let paragraph2 = document.getElementById("my-paragraph2");
+let btn2 = document.getElementById("my-btn2");
+function showHideText() {
+    // Show/Hide code
+    if(paragraph2.style.visibility === 'visible'){
+        paragraph2.style.visibility = 'hidden';
+    }else{ // hidden
+        paragraph2.style.visibility = 'visible';
+    }
+}
+btn2.addEventListener("click",showHideText);
+*/
+
+
+//Solución 2:
+
+/*
+let paragraph3 = document.getElementById("my-paragraph3");
+let btn3 = document.getElementById("my-btn3");
+
+function showHideText2() {
+    paragraph3.classList.toggle("hide"); // añade quita clase
+}
+
+btn3.addEventListener("click",showHideText2);
+*/
+
+
+/*
+2- Hacer que con onmouseover y onmouseout, se muestre/esconda un parrafo escondido, cuando pases el raton sobre el otro parrafo revisar visibiity y display con CSS
+*/
+
