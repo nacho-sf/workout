@@ -96,6 +96,74 @@ chauchat(31);
 
 
 
+/*
+let cargador = 33;
+let cooldown = 0;
+function chauchat(bullets){
+  let rand =Array.from({length: bullets * 0.8}, () => Math.floor(Math.random() * (bullets * 0.8)));
+  for(i = 0; i < bullets; i++){
+    if(rand.includes(i)){
+      console.log("Illo, me he quedao pillá!");
+    }
+    else{
+      console.log("pium!");
+      cooldown++;
+      if(cooldown>=3){
+        console.log(" ")
+        
+        cooldown = 0;
+      }
+    }
+    
+  }}
+chauchat(cargador);
+*/
+
+
+
+/*
+function chauchat(cargador) {
+    cargador = 20;
+    let atascado = Math.floor(Math.random() * cargador);
+    var rafaga = "";
+    for (i = 1; i <= cargador; i++) {
+        if (i == atascado) {
+            console.log(rafaga);
+            console.log("illo me he quedao pilla!");
+            console.log("Se ha atascado en la bala " + atascado);
+            break;
+        }
+        else if (i > 0 && i % 3 == 0) {
+            rafaga += 'pium!\n\n';
+        } else {
+            rafaga += 'pium!\n';
+        }
+    }
+}
+console.log(chauchat());
+*/
+
+
+
+/*
+function disparar(disparos) {
+    let gatillo = Math.random() * (100 - 0) + 0;//cifra al azar entre 0 y 100
+    if (gatillo > 20) {//si sale menos de 20%
+        for (let i = 1; i < disparos; i++) {
+            if (i % 4 == 0) {
+                console.log(” “);//añadir espacio cada 3 tiros
+            }
+            else { console.log(“pium!“); }
+        }
+    }
+    else {
+        console.log(“illo me quedao pillá!“);//si no 20% sale
+    }
+}
+*/
+
+
+
 
 
 
