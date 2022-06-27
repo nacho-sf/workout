@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <button id="my-btn2">Show/hide</button>
     <p id="my-paragraph2">Texto de tarde</p>
 
-<script src="./js/script.js"></script>
+    <button id="my-btn3">Show/hide</button>
+    <p id="my-paragraph3">Texto de tarde con clase</p>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color:#949494;width:120px;height:20px;padding:40px;">
+        Párrafo visible</div>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color:#949494;width:120px;height:40px;padding:40px;">
+        Párrafo escondido</div>
+
+
+    <script src="./js/script.js"></script>
 
 </body>
+
 </html>

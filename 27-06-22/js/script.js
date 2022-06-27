@@ -264,7 +264,22 @@ btn3.addEventListener("click",showHideText2);
 */
 
 
+
+
+
+
 /*
-2- Hacer que con onmouseover y onmouseout, se muestre/esconda un parrafo escondido, cuando pases el raton sobre el otro parrafo revisar visibiity y display con CSS
+2- Hacer que con onmouseover y onmouseout, se muestre/esconda un parrafo escondido, cuando pases el raton sobre el otro parrafo. Revisar visibility y display con CSS
 */
 
+
+
+
+  function showHideText() {
+    // Show/Hide code
+    if(mOver.style.visibility === 'hidden') {
+        mOut.style.visibility = 'visible';
+    }else{ // hidden
+        mOver.style.visibility = 'hidden';
+    }
+}
