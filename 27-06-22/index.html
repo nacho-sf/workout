@@ -10,19 +10,33 @@
 
 <body>
 
-    <button id="my-btn2">Show/hide</button>
+
+    <p id="my-paragraph1">Texto 1</p>
+    <button type="button" onclick="document.getElementById('my-paragraph1').style.color = 'red'"> Click Me!</button>
+
+
+    <button id="my-btn2">Show/hide2</button>
     <p id="my-paragraph2">Texto de tarde</p>
 
-    <button id="my-btn3">Show/hide</button>
+    <button id="my-btn3">Show/hide3</button>
     <p id="my-paragraph3">Texto de tarde con clase</p>
 
     <div onmouseover="mOver(this)" onmouseout="mOut(this)"
-        style="background-color:#949494;width:120px;height:20px;padding:40px;">
-        Párrafo visible</div>
+        style="background-color:#ffffff;width:120px;height:20px;padding:40px;">
+    </div>
 
     <div onmouseover="mOver(this)" onmouseout="mOut(this)"
-        style="background-color:#949494;width:120px;height:40px;padding:40px;">
-        Párrafo escondido</div>
+        style="background-color:#ffffff;width:120px;height:40px;padding:40px;">
+        Párrafo</div>
+
+
+    <p id="stay-paragraph">parrafo permanente</p>
+    <p id="hide-paragraph" style="display:none;">parrafo que aparece</p>
+
+
+    <!-- <button id="btn">Pulse</button> -->
+    <p id="primero">Hola este es el parrafo primero</p>
+    <p id="segundo">Hola este es el parrafo segundo</p>
 
 
     <script src="./js/script.js"></script>

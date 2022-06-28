@@ -232,8 +232,14 @@ Ejercicios DOM:
 */
 
 
-
 //Solución 1:
+
+//Sin código en script (solo HTML)
+
+
+
+
+//Solución 2:
 
 /*
 let paragraph2 = document.getElementById("my-paragraph2");
@@ -250,7 +256,7 @@ btn2.addEventListener("click",showHideText);
 */
 
 
-//Solución 2:
+//Solución 3:
 
 /*
 let paragraph3 = document.getElementById("my-paragraph3");
@@ -274,12 +280,49 @@ btn3.addEventListener("click",showHideText2);
 
 
 
+//Solución 1:
 
-  function showHideText() {
-    // Show/Hide code
-    if(mOver.style.visibility === 'hidden') {
-        mOut.style.visibility = 'visible';
-    }else{ // hidden
-        mOver.style.visibility = 'hidden';
-    }
-}
+/*
+function mOver(obj) {
+    obj.innerHTML = " "
+  }
+  
+  function mOut(obj) {
+    obj.innerHTML = "Párrafo"
+  }
+*/
+
+
+
+//Solución 2:
+
+/*
+document.getElementById("stay-paragraph").addEventListener("mouseover", function(){
+    document.getElementById("hide-paragraph").style.display = ""
+})
+ document.getElementById("stay-paragraph").addEventListener("mouseout", function(){
+     document.getElementById("hide-paragraph").style.display = "none"
+    })
+*/
+
+
+
+//Solución 3:
+
+/*
+let paragraph = document.getElementById("primero");
+  let paragraph2 = document.getElementById("segundo");
+  function hideText() {
+      // Show/Hide code
+      if(paragraph2.style.visibility === 'visible'){
+          paragraph2.style.visibility = 'hidden';
+      }else{ // hidden
+          paragraph2.style.visibility = 'visible';
+      }
+  }
+  paragraph.addEventListener("mouseover",hideText);
+  paragraph.addEventListener("mouseout",hideText);
+*/
+
+
+
